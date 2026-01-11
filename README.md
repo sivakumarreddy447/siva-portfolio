@@ -35,42 +35,7 @@ npm run dev
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Customization
 
-### Update Your Information
-
-Edit the `/data/profile.ts` file to update your personal information:
-
-- **personalInfo**: Your name, role, description, location, resume URL
-- **socialLinks**: GitHub, LinkedIn, email addresses
-- **skills**: Technical skills organized by category
-- **education**: Educational background
-- **experience**: Work experience history
-- **projects**: Portfolio projects
-- **certifications**: Professional certifications
-
-### Adding Images/Logos
-
-Place your images in the `/public` folder and reference them in the data file:
-
-```typescript
-logo: "/your-logo.png"
-```
-
-## Deployment
-
-### Deploy to Vercel
-
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Deploy with one click
-
-Or use the Vercel CLI:
-
-```bash
-npm i -g vercel
-vercel
-```
 
 ## Project Structure
 
