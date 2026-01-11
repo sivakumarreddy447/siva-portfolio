@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <rect width="200" height="80" fill="#ffffff"/>
+  <text x="100" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1a5f7a" text-anchor="middle">SYMETRA</text>
+  <text x="100" y="55" font-family="Arial, sans-serif" font-size="8" fill="#666666" text-anchor="middle">RETIREMENT | BENEFITS | LIFE</text>
+  <path d="M30 25 Q50 15 70 25 L60 30 Q50 25 40 30 Z" fill="#2b7cb3"/>
+</svg>

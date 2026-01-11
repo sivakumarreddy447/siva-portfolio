@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Base styles */
+body {
+  @apply bg-white text-gray-900 antialiased;
+}
+
+/* Hover highlight effect classes */
+.hover-highlight {
+  @apply relative transition-all duration-200 ease-out;
+}
+
+.hover-highlight::before {
+  content: '';
+  @apply absolute inset-0 rounded-lg opacity-0 transition-all duration-200 ease-out pointer-events-none;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(147, 51, 234, 0.08));
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transform: scale(0.98);
+}
+
+.hover-highlight:hover::before {
+  @apply opacity-100;
+  transform: scale(1);
+}
+
+/* Interactive card styles */
+.interactive-card {
+  @apply relative bg-white border border-gray-200 rounded-xl p-6 transition-all duration-200 ease-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.interactive-card:hover {
+  @apply border-blue-200;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Button styles */
+.btn-primary {
+  @apply px-6 py-3 bg-gray-900 text-white rounded-lg font-medium transition-all duration-200 ease-out;
+}
+
+.btn-primary:hover {
+  @apply bg-gray-800;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg font-medium transition-all duration-200 ease-out;
+}
+
+.btn-secondary:hover {
+  @apply bg-gray-50 border-gray-400;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon hover effect */
+.icon-hover {
+  @apply transition-all duration-200 ease-out;
+}
+
+.icon-hover:hover {
+  transform: scale(1.15);
+}
+
+/* Skill item styles */
+.skill-item {
+  @apply flex flex-col items-center gap-2 p-4 rounded-xl transition-all duration-200 ease-out cursor-default;
+}
+
+.skill-item:hover {
+  @apply bg-gray-50;
+  transform: translateY(-2px);
+}
+
+/* Section title animation */
+.section-title {
+  @apply text-4xl md:text-5xl font-bold text-center mb-16;
+}
+
+/* Nav link styles */
+.nav-link {
+  @apply relative px-3 py-2 text-gray-600 font-medium transition-all duration-200 ease-out;
+}
+
+.nav-link:hover {
+  @apply text-gray-900;
+}
+
+.nav-link.active {
+  @apply text-gray-900;
+}
+
+.nav-link.active::after {
+  content: '';
+  @apply absolute bottom-0 left-3 right-3 h-0.5 bg-gray-900 rounded-full;
+}
+
+/* Timeline styles */
+.timeline-line {
+  @apply absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-200;
+}
+
+.timeline-dot {
+  @apply absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white z-10;
+}
+
+/* Typing animation for hero */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.typing-cursor::after {
+  content: '|';
+  @apply ml-1 font-light;
+  animation: blink 1s infinite;
+}
+
+/* Fade in on scroll animation helper */
+.fade-in-section {
+  @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+}
+
+.fade-in-section.visible {
+  @apply opacity-100 translate-y-0;
+}

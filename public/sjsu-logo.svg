@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="45" fill="#0055a2"/>
+  <text x="50" y="45" font-family="Georgia, serif" font-size="12" fill="#f5b300" text-anchor="middle" font-weight="bold">SAN JOSE</text>
+  <text x="50" y="60" font-family="Georgia, serif" font-size="12" fill="#f5b300" text-anchor="middle" font-weight="bold">STATE</text>
+  <text x="50" y="75" font-family="Georgia, serif" font-size="8" fill="#ffffff" text-anchor="middle">UNIVERSITY</text>
+</svg>
